@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Survey Form</h1>
+            <p id="description">Thank you for taking the time to fill the survey</p>
+            <form id="survey-form">
+                <fieldset>
+                    <label for="name-label">Name <input id="name-label" name="name-label" type="text" placeholder="Enter your name" required/></label>
+                    <label for="email-label">Email <input id="email-label" name="email-label" type="email" placeholder="Enter your Email" required/></label>
+                    <label for="number-label">Age (optional) <input id="number-label" name="number-label" type="number" min="10" max="100" placeholder="Age"/></label>
+                    <label for="dropdown" >What is your gender?
+                        <select id="dropdown" name="dropdown" required>
+                            <option value="" selected disabled>Select gender</option>
+                            <option value="1">Female</option>
+                            <option value="2">Male</option>
+                            <option value="3">Prefer not to say</option>
+                        </select>
+                    </label>
+                    <label for="radio-label"> How much do you like playing video games?
+                        <br>
+                        <input id="radio1" type="radio" name="radio-type" class="inline" required/> Very much
+                        <br>
+                        <input id="radio2" type="radio" name="radio-type" class="inline" /> Not really
+                        <br>
+                        <input id="radio3" type="radio" name="radio-type" class="inline" /> Somewhat
+                        <br>
+                        <input id="radio4" type="radio" name="radio-type" class="inline" /> Not at all
+                    </label>
+                    <label for="dropdown"> How long do you play games in one day?
+                        <select id="dropdown" name="dropdown" required>
+                            <option value="" selected disabled>Select an option</option>
+                            <option value="1">1 - 2 hours</option>
+                            <option value="2">3 - 5 hours</option>
+                            <option value="3">6 - 8 hours</option>
+                            <option value="4">9 - 11 hours</option>
+                        </select>
+                    </label>
+                    <label for="checkbox-label" > What type of video games do you like to play?
+                        <br>
+                        <input id="checkbox1" type="checkbox" name="checkbox-type" class="inline" /> Action
+                        <br>
+                        <input id="checkbox2" type="checkbox" name="checkbox-type" class="inline" /> Role Playing
+                        <br>
+                        <input id="checkbox3" type="checkbox" name="checkbox-type" class="inline" /> Strategy
+                        <br>
+                        <input id="checkbox4" type="checkbox" name="checkbox-type" class="inline" /> Adventure
+                        <br>
+                        <input id="checkbox5" type="checkbox" name="checkbox-type" class="inline" /> Simulation
+                        <br>
+                        <input id="checkbox6" type="checkbox" name="checkbox-type" class="inline" /> Sports
+                        <br>
+                        <input id="checkbox7" type="checkbox" name="checkbox-type" class="inline" /> Other
+                    </label>
+                    <label for="text-area"> Why do you like video games that you checked above?
+                        <br>
+                        <textarea id="text-area" name="text-area" rows="3" cols="30" placeholder="Type here..." required></textarea>
+                    </label>
+                    <input type="submit" value="Submit" />
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
